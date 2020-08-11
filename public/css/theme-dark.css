@@ -1,0 +1,144 @@
+body {
+    color: #eafbcb;
+}
+
+.banner,
+.footer {
+    background-color: #008000;
+}
+
+.content {
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 1);
+}
+
+fieldset,
+.adresse {
+    border: 2px solid #008000;
+    color: #eafbcb;
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.nav li:hover, nav li a:hover {
+    background-color: #00a000;
+    color: #002500;
+}
+
+.nav li {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+li:hover {
+
+    border: 2px solid #008000;
+    color: #eafbcb;
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+li.produit:hover {
+    border: 2px solid #008000;
+    color: #eafbcb;
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+li{
+    color: #eafbcb;
+}
+
+a {
+    color: #eafbcb;
+}
+
+#theme-menu {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#theme-menu li:hover {
+    background-color: #008000;
+}
+
+#theme-menu li {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    color: #eafbcb;
+    background-color: #00a000;
+}
+
+.btn-green {
+    border: 1px solid #008000;
+    color: #eafbcb;
+    background-color: #008000;
+}
+
+.btn-green:hover {
+    background-color: #00a000;
+}
+
+.btn-transparent {
+    border: 2px solid #008000;
+    color: #eafbcb;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-transparent:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+.detail-produit,
+.comment {
+    color: #eafbcb;
+}
+
+.inp-act {
+    outline: 2px solid #008000;
+    box-shadow: 0 0 3pt 2pt #008000;
+}
+
+.detail-produit,
+.comment {
+    border: 2px solid #008000;
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+textarea:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px #008000;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: #00a000;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.lien-dark {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.lien-dark:hover {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+.lien-light {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.lien-light:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}

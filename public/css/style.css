@@ -1,0 +1,441 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+p {
+    padding: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer {
+
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+form {
+    align-self: center;
+    margin: 15px 0;
+    min-width: 345px;
+}
+
+fieldset {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+label {
+    display: inline-block;
+    width: 125px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+}
+
+li {
+    list-style: none;
+    width: 250px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom:2px;
+}
+
+/*Style de la barre de navigation*/
+
+nav > ul > li > a {
+    display: block;
+    border-bottom:none;
+    padding-bottom:0px;
+}
+
+ul.nav {
+    padding-bottom: 1px;
+}
+
+ul.nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 26px;
+}
+
+ul.nav > li {
+    display: inline-block;
+    position: relative;
+}
+
+ul.nav > li ul {
+    display: none;
+    position: absolute;
+    margin-top: 1px;
+    width: 250px;
+}
+
+ul.nav > li:hover ul {
+    display: block;
+}
+
+ul.nav > li ul li {
+    display: inline-block;
+    padding: 25px 0;
+}
+
+.nav li:hover {
+    border: none;
+}
+
+#theme-button {
+    cursor: pointer;
+}
+
+#theme-menu {
+    display: none;
+    list-style: none;
+    min-width: 160px;
+    flex-direction: column;
+}
+
+.theme-color {
+    cursor: pointer;
+}
+
+/*Style des sections importantes*/
+
+.banner,
+.footer {
+    min-height: 100px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+#slideshow {
+    height: 600px;
+    width: 100%;
+    -webkit-animation-name: background;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes background {
+    0% {
+        background-image: url("/public/images/b1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    33% {
+        background-image: url("/public/images/b2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    100% {
+        background-image: url("/public/images/b3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    padding: 2rem 0rem;
+    top: 0;
+    width: 33.3%;
+}
+
+.footer-section p {
+    font-size: 12px;
+}
+
+#user {
+    min-width: 175px;
+}
+
+div.user > p:nth-child(2) {
+    margin: 0;
+}
+
+.logo {
+    width: 80px;
+}
+
+/*Style pour aligner items/text*/
+
+.flex-center {
+    align-items: center;
+}
+.center {
+    text-align: center;
+}
+.message {
+    vertical-align: text-top;
+}
+
+/*Style pour les forms*/
+
+#form-login,
+#form-signup {
+    position: relative;
+}
+
+#form-contact > fieldset > div.field {
+    display: none;
+}
+
+.field {
+    padding: 8px;
+}
+.form-livredor fieldset, .form-modifier fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-livredor .field, .form-modifier .field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-livredor label, .form-modifier label {
+    width: 100%;
+}
+
+.form-contact {
+    margin: 0;
+    padding: 0;
+    align-self: normal;
+}
+
+/*Style pour les boutons*/
+
+.btn-green {
+    padding: 10px;
+    margin-right: 35px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.btn-transparent {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 0.25s;
+    min-width: 40px;
+}
+
+a.btn-transparent {
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+}
+
+/*Style pour les inputs*/
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    margin: 5px;
+    border-radius: 5px;
+    min-height: 20px;
+    transition-duration: 0.25s;
+    min-width: 150px;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 150px;
+}
+
+/*Style produits*/
+
+.container {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: normal;
+}
+
+.produit {
+    width: 33.33%;
+    margin: 3%;
+    padding: 3%;
+}
+
+.produits {
+    display: flex;
+    width: 100%;
+
+}
+
+.image-produit {
+    height: 100px;
+    width: 100px;
+}
+
+.detail-produit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.detail-produit a {
+    display: block;
+    margin: 25px 0;
+}
+
+.prix-produit {
+    margin: 15px;
+    display: block;
+}
+
+/*Style commentaires*/
+
+.comments {
+    margin: 0 auto;
+    min-width: 345px;
+    overflow-y: scroll;
+    min-height: 250px;
+    border: none;
+    padding: 5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 301px;
+}
+
+.points {
+    padding: 5px;
+    margin: 16px 0;
+    cursor:pointer;
+}
+
+.comment-text {
+    width: 100%;
+}
+
+/*Style page contact*/
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Style adresse*/
+
+.adresse {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    margin: 0 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.emplacement {
+    position: absolute;
+    left: 0px;
+}
+
+/*Style carte*/
+
+#map {
+    height: 400px;
+    margin: 0 20px;
+}
+
+.carte {
+    position: absolute;
+    right: 0px;
+}
+
+/*Messages*/
+
+label.error {
+    display: block;
+    color: red;
+    width: 100%;
+}
+
+.alert-error strong {
+    color: red;
+}
+
+.alert-success strong {
+    color: #008000;
+}
